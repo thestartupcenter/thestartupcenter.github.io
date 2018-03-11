@@ -108,6 +108,13 @@ nav a{
         z-index: 1000;
         background-color: white;
     }
+    
+       .about {
+        margin-top: 35vh;
+    }
+    
+    
+    
 }
 
 
@@ -376,6 +383,12 @@ nav {
 
 #black {
     color: black;
+}
+
+#ab2664 {
+    margin-top: 10vh;
+    font-size: 40px;
+    font-size: 3em;
 }
 
 

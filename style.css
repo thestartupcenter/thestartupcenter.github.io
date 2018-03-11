@@ -112,6 +112,19 @@ nav a{
        .about {
         margin-top: 35vh;
     }
+        #steps {
+        height: 30vh!important;
+    }
+    
+    
+    #cohost {
+    height: 12vh!important;
+    }
+    
+    .seriesdiv h1 {
+      padding-top: 20px;
+    }
+    
     
     
     

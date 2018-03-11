@@ -1,0 +1,390 @@
+html,body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    background: url(images/Websitebackdrop.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+nav a{
+    color: white!important;
+}
+
+.nav-link a:hover {
+    color: red;
+}
+
+.dropdown-item {
+    color: black!important;
+}
+
+.navbar-toggler-icon {
+    background-color: #f4f4f4;
+}
+
+.bg-purple {
+    background-color: #282e34/*#9544be!important*/;
+    font-family: 'Libre Franklin', sans-serif;
+    
+}
+
+.navbar-default .nav-justified a:hover {
+    background-color: transparent;
+    -webkit-transition-duration: 0.78s;
+    transition-duration: 0.78s;
+    color: blue;
+}
+
+
+.registerrow {
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/skin-side-up.png");
+
+    background-color: rgba(265,265,265,1);
+    position: static;
+    margin-top: 10vh;
+    padding-bottom: 10vh;
+    margin-top: 20vh;
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+}
+
+.registerrow h1 {
+    margin-top: 53px;
+    font-size: 24px;
+    font-size: 1.70em;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    padding-right: 10.1px;
+}
+
+.registerrow p {
+    margin-top: 24px;
+    letter-spacing: 1px;
+    
+}
+
+.logo {
+    height: 47vh;
+}
+
+.registerbutton {
+    border-radius: 30px;
+    padding-right: 17px;
+    padding-left: 17px;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    color: white;
+    background-color: #ff4f2d;
+    font-family: 'Libre Franklin', sans-serif;
+    letter-spacing: 1.2px;
+    font-size: 12px!important; 
+    font-size: 2em;
+    text-align: center!important; 
+    cursor: pointer;
+    margin-top: 3vh;
+    
+}
+
+.socialmedia a {
+    padding-right: 10px;
+    color: #9544be;
+}
+
+.registerbutton:focus {
+    outline:0;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .registerrow {
+        height: 110vh;
+        z-index: 1000;
+        background-color: white;
+    }
+}
+
+
+.container-fluid {
+    padding: 0px;
+}
+
+.intro {
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+
+
+.about {
+    padding-top: 60px;
+    line-height: 1.9;
+    padding-bottom: 100px;
+    padding-left: 70px;
+    padding-right: 70px;
+    background-color: white;
+    letter-spacing: 1.3px;
+}
+.about h1 {
+    text-align: left;
+    text-transform: capitalize;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    
+}
+
+#orangebar {
+    margin-top: 6vh;
+    height: 40vh;
+    width: 1.0vw;
+    float: right;
+}
+
+#stepup {
+    padding-bottom: 10vh;
+}
+
+.about h1 {
+    text-transform: uppercase;
+}
+
+#box {
+   
+    border-left: 8px solid #ff4f2d;
+}
+
+#steps {
+    height: 50vh;
+}
+
+.bold {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 700;
+}
+.eventheader {
+    background-image: url(black-twill.png);
+    background-position: center;
+    background-attachment: fixed;
+    
+    background-color: #9240c7;
+    margin-top: -10vh;
+    height: 50vh;
+    padding-bottom: 30vh;
+    
+}
+
+.seriesdiv {
+    padding-top: 130px;
+    
+}
+
+.eventheader h1 {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    font-size: 130px;
+    width: 700px;
+    margin: 0 auto;
+   
+    margin-top: -10vh;
+    
+    border-radius: 5px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    .eventheader h1 {
+        font-size: 4em;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+.events {
+    background-color: white;
+
+    padding: 2vh;
+    margin-top: 0px;
+     padding-left: 90px;
+    padding-right: 90px;
+}
+
+.events h1 {
+    margin-top: -10px;
+    margin-bottom: 40px;
+    text-align: center;
+    letter-spacing: 1.6px;
+    color: #ff4f2d;
+    font-size: 60px;
+    font-size: 3.4em;
+    padding-top: 40px;
+    
+}
+
+.events h3 {
+    font-size: 22px;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.innovationminds {
+    text-align: center;
+}
+
+#cohost {
+    height: 30vh;
+}
+
+.events p {
+    margin-bottom: 60px;
+}
+
+.event2 {
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #9240c7;
+    color: white;
+    padding-bottom: 5vh;
+}
+.event2 h1 {
+    padding-top: 40px;
+    text-align: center;
+    font-size: 60px;
+    font-size: 3.4em;
+    
+}
+
+.prizes {
+    padding: 10vh;
+    text-align: center;
+    background-color: #ff4f2d;
+    margin-bottom: -7px;
+    color: white;
+}
+
+.trophy {
+    text-align: center;
+    background-color: #ff4f2d;
+}
+
+#FAQ {
+    background-image: url(images/skyscraper.png);
+    color: black;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding-top: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 30px;
+}
+#FAQ row {
+    padding: 20px 20px 20px 20px;
+    
+}
+
+#FAQ h1 {
+    color: #9240c7;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    letter-spacing: 1.6px;
+}
+
+#FAQ h3 {
+    color: #9240c7;
+    font-weight: 1000;
+    font-size: 25px;
+}
+
+nav {
+    text-transform: uppercase;
+    letter-spacing: 1.5px; 
+}
+
+.sponsors {
+    padding-left: 70px;
+    padding-right: 70px;
+    background-color: white;
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+.sponsors h1 {
+    color: #ff4f2d;
+    text-align: center;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+.sponsors img {
+    margin-top: 40px;
+   height: 150px;
+    
+}
+
+
+#inminds {
+
+    height: 40vh;
+    text-align: center;
+    margin: 0 auto;
+   
+}
+
+#microsoft {
+    height: 20vh;
+    text-align: center;
+
+}
+
+#linkedin {
+    height: 150px;
+}
+#wood {
+    padding-left: 30vh;
+}
+
+#ink {
+    padding-left: 40vh;
+}
+
+#intel {
+    padding-left: 25vh;
+}
+
+.footer{
+    background-color: #ff4f2d;
+    padding-bottom: 30px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+#black {
+    color: black;
+}
+
+
+
+footer p{
+    font-size: 25px;
+}
+
+
+
+
+  

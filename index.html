@@ -1,82 +1,368 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
-<title> Zack Silverman </title>
-<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">   
-<link type="text/css" rel="stylesheet" href="main.css">    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<title>Creator Challenge Series</title>
+<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,700" rel="stylesheet">
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<link type="text/css" rel="stylesheet" href="style.css"/>
+    
+<link rel="shortcut icon" href="navlogo.png" type="image/png">    
 
-<!-- Bootstrap -->      
-
-
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<!-- End bootstrap -->   
-    
-    
-<!-- Fav icon -->        
-<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
-<link rel="manifest" href="/favicons/manifest.json">
-<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="theme-color" content="#ffffff">    
-    
 </head>
-    
-    
-<!-- Fonts sucks. Add Kesem pics -->    
-    
 <body>
+<div class="container-fluid">
+<nav class="navbar navbar-expand-lg  bg-purple">
+  <a class="navbar-brand" href="#"><img class="img-fluid" src="navlogo.png" width="40" height="40"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-<!-- Fluid container --> 
-<nav class="navbar navbar-default"> 
-    <div class="container-fluid"> 
-    
-    <!-- LOGO -->  
-    <div class="navbar-header">
-        <a href="#" class="navbar-brand">Zack Silverman</a>
-    </div>
-        
-    <!-- MENU ITEMS -->     
-    <div>
-        <u1 class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </u1>
-    </div>
-        
-        
-    
-    </div>
-</nav>     
-    
-    
-<div class="prof-box">
-    <img src="/images/Kesem_cropped.jpg" class="prof-pic">
-    
-    <h1> Zack Silverman </h1>
-    <h4> Second year CS student at UC Davis! </h4>
-    
-    <div class="line-break"> </div>
-    
-    <p> I'm interested in front-end web development. </p>
-    
-    <div class = "social-icons">
-        <a href="https://www.facebook.com/zack.silverman.5" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-        <a href="https://www.linkedin.com/in/zacksilverman/" target="_blank"><i href="" class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-        <a href="https://github.com/zsilverman" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
-    </div>  <!-- Facebook link is broken -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="sr-only">About</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item scroll" href="#FAQ" >FAQ</a>
+          <!--<a class="dropdown-item" href="#">Technologies</a>-->
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item scroll" href="#sponsor">Sponsors</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link scroll" href="#events">Ideathon</a>
+      </li>
+     <li class="nav-item">
+        <a class="nav-link scroll" href="#event2">Create-a-thon</a>
+        </li>
+    <li class="nav-item">
+        <a target="_blank" class="nav-link scroll" href="Creator.pdf">2017</a>
+    </li>
+        <li class="nav-item">
+        <a target="_blank" class="nav-link scroll" href="techs.jpg">Technologies</a>
+    </li>
+    </ul>
+
+  </div>
+</nav>
+    
+    
+    
+<section class="intro">
+<div class="registerrow">
+    <div class="row">
+        <div class="col-md-5">
+            <img class="logo img-fluid" src="new%20logo%20transparent.png"/>
+        </div>
+        <div class="col-md-7">
+            <h1>Ideathon: April 28th | Create-a-thon: May 4th-5th</h1>
+            <p><span class="description">2 weekends. Build a brighter future for our world's <a href="https://www.ucdavis.edu/one-health/what-is-one-health/">health</a> and <a href="https://www.ucdavis.edu/about/sustainability/">sustainability</a>.</span></p>
+            <a target="_blank" href= "https://docs.google.com/forms/d/1JSPEsr-a5Qv13L_-90UgMBVng-GRNDgZwOP36cBv92k/viewform?edit_requested=true"><button class="registerbutton"><h5>Register <i class="fas fa-arrow-right"></i></h5></button><a/>
+            <br>
+            <br>
+            <div class='socialmedia'>
+            <a target="_blank" href="https://www.facebook.com/UCDStartup/"><i class="fab fa-facebook-square fa-2x"></i></a>
+            <a target="_blank" href="https://www.instagram.com/ucdssc/"><i class="fab fa-instagram fa-2x"></i></a>
+            <a target="_blank"href="https://www.linkedin.com/company/ucdessc/"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+      </div>
+    </div>
 </div> 
+</section>
+<section class="about">
+    <h1>Step up to the challenge</h1>
+<div id="stepup" class="row">
+    <div class="col-md-2">
+        
+    
+    </div>
+    <div id="box" class="col-md-10">
 
+    <br>
+   
+    <p><span class="bold">The Creator Challenge Series</span> is an initiative inspired and propelled by the growing interest in entrepreneurship and technology at UC Davis.</p>
+    <p><span class="bold">In just over a week</span>, you will experience the full life cycle of an idea. This year, our goal is to create 'A Brighter Future', focusing on our UC Davis initiatives of <a href="https://www.ucdavis.edu/one-health/what-is-one-health/">OneHealth</a> and <a href="https://www.ucdavis.edu/about/sustainability/">Sustainability</a>. Connect with cofounders, mentors, and leading companies to grow your idea into a full-fledged venture using state-of-the-art technology. Your entrepreneurial community awaits.</p> 
+    </div>
+</div>
+<!--<div class="row">-->
+   <!-- <div class="col-md-6">
+    
+    </div>
+    <div class="col-md-6">-->
+        <img class="img-fluid" id="steps" src="steps.png"/>
+   <!-- </div>-->
 
+<!--</div>-->
+</section>
+<section class="eventheader">
+    <div class="seriesdiv">
+    <h1>The Series</h1>
+    </div>
+</section> 
+<section id="events" class="events">
+    
+    <h1>Ideathon</h1>
+    <!--<div class="row">-->
+    <div class="col-md-12">
+    <h4 class="innovationminds">by &nbsp;<img class="img-fluid" src="innovationminds.png"></h4>
+        </div>
+    <!--</div>-->
+    <h3>Bring an open mind and your best ideas to officially kick off the 2018 Creator Challenge Series with the Ideathon!</h3>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+        <h4 style="text-align:center;color:#ff4f2d;">Where is it?</h4>
+        <p style="text-align:center;">April 28th 10:00 AM to 4:30 PM</p>
+        <p style="text-align:center;">ARC Ballroom</p>
+        </div>
+        
+        <div class="col-md-4">
+        <h4 style="text-align:center;color:#ff4f2d;">What is happening?</h4>
+        <p style="text-align:center;">The Student Startup Center will be partnering with Innovation Minds to bring you a series of workshops featuring today’s coolest gadgets and technologies. You’ll get to play with the tech, meet successful entrepreneurs, and exchange ideas with other students! Come to get inspired and find potential teammates for the Create-a-thon!</p>
+        </div>
+        
+        <div class="col-md-4">
+        <h4 style="text-align:center;color:#ff4f2d;">How do I participate?</h4>
+        <p style="text-align:center;">The application for the Creator Challenge Series is now available. Make sure to apply <a href="https://goo.gl/forms/VqJmXMFRsHTOliEz2">here</a>!</p>
+        
+        </div>
+  
+       
+        
+    
+    
+    
+    </div>
+</section>
+<section id="event2" class="event2">
+    <h1>Create-a-thon</h1>
+    <br>
+        <h3 style="text-align:center">Use business, design, and engineering to CREATE</h3>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+        <h4 style="text-align:center;">Where is it?</h4>
+        <p style="text-align:center;">Kemper Hall starting May 4th at 3:00 PM</p>
+        
+        </div>
+        <div class="col-md-4">
+        <h4 style="text-align:center;">What is happening?</h4>
+        <p style="text-align:center;">Participants at the Create-a-thon will have 24 hours to build their futuristic product using any of the technologies we have to offer. Then, the teams get their chance to impress the judges who will be scoring the projects and awarding prizes. The top projects from the Create-a-thon will have the opportunity to participate in the final event, the Sharkathon, to pitch their project to potential investors. Think of it as a mix between a hackathon and a startup weekend. Exciting right?</p>
+        
+        
+        </div>
+        <div class="col-md-4">
+        <h4 style="text-align:center;">How do I participate?</h4>
+        <p style="text-align:center;">The application for the Creator Challenge Series is now available. Make sure to apply <a href="https://goo.gl/forms/VqJmXMFRsHTOliEz2">here</a>!</p>
+        </div>
+    </div>
+    
+</section>
+<section class="prizes">
+        <h1 class="prize">Prizes</h1>   
+    <div class="row">
+        <div class="col-md-4">
+        <h3 style="text-align:center;">First Place</h3>
+        <h4 style="text-align:center;">May 10th Startup Field Trip to SF and $1,000</h4>
+        
+        </div>
+        <div class="col-md-4">
+        <h3 style="text-align:center;">Second Place</h3>
+        <h4 style="text-align:center;">$750</h4>
+        
+        </div>
+        <div class="col-md-4">
+        <h3 style="text-align:center;">Third Place</h3>
+        <h4 style="text-align:center;">$500</h4>
+            
+        <br> 
+        <br>
+            
+        </div>
+        <div class="col-md-6">
+        <h3 style="text-align:center;">Best Incorporation of Sustainability</h3>
+        <h4 style="text-align:center;">$1,000</h4>
+        
+        </div>
+        <div class="col-md-6">
+        <h3 style="text-align:center;">Best Incorporation of Health</h3>
+        <h4 style="text-align:center;">$1,000</h4>  
+         
+        </div>
+    </div>
+            
+</section>
+<section id="FAQ">
+    <h1>FAQ</h1>
+    <div class="row">
+        <div class="col-md-4"><strong><h3>What is the UC Davis Creator Challenge Series?</h3></strong>
+        <p>
+        The UC Davis Creator Challenge Series is an initiative to encourage innovation and entrepreneurship on campus. The Student Startup Center is kicking off this series with the Ideathon where students will be able to play with emerging technologies while thinking of ways these can be incorporated into everyday lifestyles.
+        </p>
+        <br>
+        </div>
+        <div class="col-md-4"><strong><h3>What is the Create-a-thon?</h3></strong>
+        <p>
+        The Create-a-thon is a 24-hour mix between a hackathon and a startup weekend, where students work-around-the clock creative blitz during which students, mentors, and companies work together to engage in a collaborative project. Leading up to this event you will get to play with and learn more about the latest emerging technologies and brainstorm ideas geared towards transforming the ways in which humans utilize technology in their everyday lives.
+        </p>
+        </div>
+          <div class="col-md-4"><strong><h3>Who can attend?  Do I have to be a tech expert?</h3></strong>
+        <p>
+        All of our events are open to all majors. We welcome all of our computer scientists, designers, engineers, and innovators to collaborate on their ideas. We will be holding workshops leading up to and at the Create-a-thon, which will help you get more familiar with the technology and help you meet other students for your team.
+        </p>
+        <p>
+        You don’t have to have any prior experience. We will be holding several workshops leading up to the Create-a-thon which will help you get more hands-on experience with the available technology.  
+        </p>
+        <br>
+        </div>
+    
+    
+    
+    
+    </div>
+    <div class="row">
+        <div class="col-md-4"><strong><h3>What can I build?</h3></strong>
+        <p>
+        The sky’s the limit! We will provide you ample technology and workshops; however, the ways in which you use these technologies for your idea in the overall theme of the Create-a-thon is up to you.
+        </p>
+        </div>
+        <div class="col-md-4"><strong><h3>How much does it cost? What can I bring?</h3></strong>
+        <p>
+        All events will be free! We will be providing students with food, caffeine, wifi, swag, a workplace and technology to borrow for your ideas. We recommend bringing a laptop, charger and comfy clothes with you.
+        </p>
+        </div>
+        <div class="col-md-4"><strong><h3>What is the UC Davis Creator Challenge Series?</h3></strong>
+        <p>
+        The UC Davis Creator Challenge Series is an initiative to encourage innovation and entrepreneurship on campus. The Student Startup Center is kicking off this series with the Ideathon where students will be able to play with emerging technologies while thinking of ways these can be incorporated into everyday lifestyles.
+        </p>
+        </div>
+        
+    
+    
+    
+    
+    </div>
+    <div class="row">
+         <div class="col-md-4"><strong><h3 style="color:#9240c7;">Are there prizes?</h3></strong>
+        <p>
+        Yes! Our sponsors will be providing some exciting prizes for teams that best utilize sponsor technology.
+        </p>
+        </div>
+      
+         <div class="col-md-4"><strong ><h3 style="color:#9240c7;">How do projects get judged?</h3></strong>
+        <p>
+        The first round of judging will take place Saturday following the end of the competition. A judge (who may be another sponsor, conference speaker, investor, or expert) will visit your table and hear your 2-minute product pitch. Projects will mainly be judged on (1) How well your solution uses the available technology (2) Progress on the solution and (3) Communication of the idea
+
+        Top teams will advance to the second round of judging which will take place on Sunday at the Sharkathon. Here teams will have the opportunity to present their ideas in front of a panel who will judge the viability of your solution as a future start-up company.
+        </p>
+        </div>
+        
+         <div class="col-md-4"><strong><h3 style="color:#9240c7;">Who owns the technology that the teams produce?</h3></strong>
+        <p>
+        All intellectual property for the technology will belong solely to the teams.
+        </p>
+        </div>
+        </div>
+    
+    
+    
+ 
+    
+    
+</section>
+<section class="">
+    
+    
+</section>
+<section id="sponsor" class="sponsors">
+    <h1>Sponsors</h1>
+    <div class="col-md-12">
+        <img class="img-fluid" id="inminds"  src="innovationminds.png">
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+        <img class="img-fluid"src="Micron_Technology.png">
+        </div>
+        <div class="col-md-6">
+       <h1 id="ab2664">AB-2664</h1>
+        </div>
+        <br>
+    
+    </div>
+    <div class="row">
+       
+        <div class="col-md-4">
+        <img class="img-fluid" src="kindlogo.png">
+        </div>
+        <div class="col-md-4">
+            <img class="img-fluid" src="monster.png">
+        </div>
+        <div class="col-md-4">
+            <img class="img-fluid" src="traderjoes.png">
+        </div>
+    
+    </div>
+        <div class="row">
+       
+        <div class="col-md-4">
+        <img class="img-fluid" src="Soylentlogo.png">
+        </div>
+        <div class="col-md-4">
+            <img class="img-fluid" src="stickermule-logo.png">
+        </div>
+        <div class="col-md-4">
+            <img class="img-fluid" id="wood" src="woodstockslogo.jpg">
+        </div>
+      
+    </div>
+        <div class="row">
+       
+       
+          <div class="col-md-4">
+            <img class="img-fluid" src="clifbar.jpg">
+        </div>
+         <div class="col-md-4">
+        <img class="img-fluid" id="microsoft" src="microsoft.png">
+      </div>
+    
+        <div class="col-md-4">
+            <img class="img-fluid" id="ink" src="inkmonkey.png">
+        </div>
+        
+        
+    
+    </div>
+
+    
+</section>
+<footer class="footer">
+    <div class="container">
+         <div class='socialmedia'>
+            <a target="_blank" href="https://www.facebook.com/UCDStartup/"><i id="black" class="fab fa-facebook-square fa-2x"></i></a>
+            <a target="_blank" href="https://www.instagram.com/ucdssc/"><i id="black" class="fab fa-instagram fa-2x"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/company/ucdessc/"><i id="black" class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <br>
+      <p>made with  <i class="fas fa-heart"></i> by the CCS Team</p>
+    </div>
+    
+</footer>
+
+    
+    
+    
+    </section>  
+</div>
 </body>
-
-
 </html>

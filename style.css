@@ -232,8 +232,8 @@ nav a{
         font-size: 130px;
         font-size: 4em;
         text-align: center;
-        padding-top: 100px;
-        line-height: 50px;
+        padding-top: -15px;
+        line-height: 100px;
     }
 }
 

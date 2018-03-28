@@ -401,6 +401,7 @@ nav {
 #linkedin {
     height: 150px;
 }
+/*
 #wood {
     padding-left: 30vh;
 }
@@ -408,16 +409,15 @@ nav {
 #ink {
     padding-left: 40vh;
 }
+*/
 
 @media only screen and (min-width: 600px) {
     #ink {
         margin-left: 5%;
-        text-align: center;
     }
 
     #wood {
     margin-left: 5%;
-    text-align: center;
     }
 }
 

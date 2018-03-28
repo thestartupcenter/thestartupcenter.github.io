@@ -409,6 +409,16 @@ nav {
     padding-left: 40vh;
 }
 
+@media only screen and (min-width: 600px) {
+    #ink {
+        margin-left: 5%;
+    }
+
+    #wood {
+    margin-left: 5%;
+    }
+}
+
 #intel {
     padding-left: 25vh;
 }

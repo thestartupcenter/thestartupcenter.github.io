@@ -401,11 +401,9 @@ nav {
 #linkedin {
     height: 150px;
 }
-/*
 #wood {
     padding-left: 30vh;
 }
-*/
 #ink {
     padding-left: 40vh;
 }
@@ -418,10 +416,6 @@ nav {
 
     #wood {
     margin-left: 5%;
-    }
-    
-    #microsoft{
-        margin-right: 5%;
     }
 }
 

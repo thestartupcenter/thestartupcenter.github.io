@@ -31,7 +31,7 @@ nav a{
 .bg-purple {
     background-color: #282e34/*#9544be!important*/;
     font-family: 'Libre Franklin', sans-serif;
-    
+
 }
 
 .navbar-default .nav-justified a:hover {
@@ -43,13 +43,10 @@ nav a{
 
 
 .registerrow {
-    background-color: #ffffff;
-    background-image: url("https://www.transparenttextures.com/patterns/skin-side-up.png");
-
-    background-color: rgba(265,265,265,1);
+    background-color: rgba(0,0,0,0,0.0)
     position: static;
     margin-top: 10vh;
-    padding-bottom: 10vh;
+    /*padding-bottom: 10vh;*/
     margin-top: 20vh;
     font-family: 'Libre Franklin', sans-serif;
     text-align: center;
@@ -64,15 +61,26 @@ nav a{
     padding-right: 10.1px;
 }
 
+.registerrow h4 {
+  font-weight: 300;
+}
+
 .registerrow p {
     margin-top: 24px;
     letter-spacing: 1px;
-    
+
 }
 
 .logo {
-    height: 57vh;
+    height: vh;
 }
+
+#engineering {
+  width: 70%;
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+}
+
 
 .registerbutton {
     border-radius: 30px;
@@ -84,12 +92,12 @@ nav a{
     background-color: #ff4f2d;
     font-family: 'Libre Franklin', sans-serif;
     letter-spacing: 1.2px;
-    font-size: 12px!important; 
+    font-size: 12px!important;
     font-size: 2em;
-    text-align: center!important; 
+    text-align: center!important;
     cursor: pointer;
     margin-top: 3vh;
-    
+
 }
 
 .socialmedia a {
@@ -97,33 +105,35 @@ nav a{
     color: #9544be;
 }
 
+
+
 .registerbutton:focus {
     outline:0;
 }
 
 @media only screen and (max-width: 600px) {
-    
+
     .registerrow {
         height: 110vh;
         z-index: 1000;
         background-color: white;
     }
-    
+
        .about {
         margin-top: 35vh;
         padding-bottom: 10vh;
     }
-    
-    
+
+
     #cohost {
     height: 12vh!important;
     }
-    
 
-    
-    
-    
-    
+
+
+
+
+
 }
 
 
@@ -132,19 +142,39 @@ nav a{
 }
 
 .intro {
-    height: 80vh;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    height: /*80vh*/ 100%;
+  
+    
+   
+    margin-top: -90px;
+    background-image: url("https://www.transparenttextures.com/patterns/skin-side-up.png");
+    background-color: rgba(265,265,265,1);
 }
 
 
 
+@media only screen and (max-width: 600px) {
+    .intro {
+        padding-bottom: 40vh;
+      
+    }
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(265,265,265, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-color: transparent;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(0,0,0,0.0);
+    background-color: transparent;
+}
+
 
 .about {
-    height: 130%;
-    padding-top: 60px;
+    height: 100%;
+    margin-top: 100px;
+    padding-top: 10vh;
     line-height: 1.9;
     padding-bottom: 100px;
     padding-left: 70px;
@@ -158,7 +188,7 @@ nav a{
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 900;
     letter-spacing: 1.2px;
-    
+
 }
 
 #orangebar {
@@ -175,7 +205,7 @@ nav a{
 
 
 #box {
-   
+
     border-left: 8px solid #ff4f2d;
 }
 
@@ -196,12 +226,12 @@ nav a{
     height: 50vh;
     font-size: 130px;
     font-size: 2em;
-    
+
 }
 
 .seriesdiv {
     padding-top: 120px;
-    
+
 }
 /*
 .eventheader h1 {
@@ -225,15 +255,15 @@ nav a{
 
 
 @media only screen and (max-width: 600px) {
-    
+
     .eventheader h1 {
         color: white;
         text-align: center;
         font-size: 130px;
         font-size: 4em;
         text-align: center;
-        padding-top: 100px;
-        line-height: 50px;
+        padding-top: -15px;
+        line-height: 100px;
     }
 }
 
@@ -255,7 +285,7 @@ nav a{
     font-size: 60px;
     font-size: 3.4em;
     padding-top: 40px;
-    
+
 }
 
 .events h3 {
@@ -288,7 +318,7 @@ nav a{
     text-align: center;
     font-size: 60px;
     font-size: 3.4em;
-    
+
 }
 
 .prizes {
@@ -323,7 +353,7 @@ nav a{
 
 #FAQ row {
     padding: 20px 20px 20px 20px;
-    
+
 }
 
 #FAQ h1 {
@@ -342,7 +372,7 @@ nav a{
 
 nav {
     text-transform: uppercase;
-    letter-spacing: 1.5px; 
+    letter-spacing: 1.5px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -375,15 +405,15 @@ nav {
 .sponsors img {
     margin-top: 40px;
    height: 150px;
-    
+
 }
 
 
 #inminds {
 
     height: 40vh;
-    text-align: center!important; 
-   
+    text-align: center!important;
+
 }
 
 @media only screen and (min-width: 600px) {
@@ -393,7 +423,7 @@ nav {
 }
 
 #microsoft {
-    height: 20vh;
+    
     text-align: center;
 
 }
@@ -402,12 +432,22 @@ nav {
     height: 150px;
 }
 #wood {
-    padding-left: 30vh;
+    padding-left: 5vh;
+}
+#ink {
+    padding-left: 5vh;
 }
 
-#ink {
-    padding-left: 40vh;
-}
+
+/*@media only screen and (min-width: 600px) {
+    #ink {
+        margin-left: 5%;
+    }
+
+    #wood {
+    margin-left: 5%;
+    }
+}*/
 
 #intel {
     padding-left: 25vh;
@@ -436,8 +476,3 @@ nav {
 footer p{
     font-size: 25px;
 }
-
-
-
-
-  

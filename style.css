@@ -426,11 +426,11 @@ nav {
 
 @media only screen and (min-width: 600px) {
     #cog {
-         height: 7vh;
+         height: 18vh;
     }
 
     #link{
-        height: 3vh;
+        height: 6vh;
     }
 }
 

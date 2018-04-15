@@ -425,6 +425,16 @@ nav {
 }
 
 @media only screen and (min-width: 600px) {
+    #cog {
+         height: 7vh;
+    }
+
+    #link{
+        height: 3vh;
+    }
+}
+
+@media only screen and (min-width: 600px) {
     #inminds {
         margin-left: 5%;
     }
